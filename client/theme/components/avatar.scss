@@ -1,0 +1,83 @@
+
+.profile-avatar {
+  transition: all 0.3s;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  z-index: 1;
+  position: relative;
+
+  .avatar-bg {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #dfdfdf;
+    position: relative;
+  }
+
+  img, .profile-icon-center {
+    width: 100%;
+    height: 100%;
+  }
+  .profile-icon-center {
+    color: #fff;
+    background: #ccc;
+    padding-top: 10px;
+  }
+  .avatar-backup {
+    position: absolute;
+    top: -3px;
+    left: -1px;
+    width: 96px;
+    height: 100px;
+    text-align: center;
+  }
+}
+
+.profile-editor {
+  position: relative;
+
+  .pencil-holder {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto 0;
+  }
+
+  .profile-editor-edit {
+    position: absolute;
+    right: -5px;
+    top: 5px;
+    background: #fff;
+    padding-top: 4px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: solid 1px $brand-success;
+    z-index: 2;
+    &:hover {
+      color: #fff;
+      background: lighten($brand-success, 10%);
+    }
+    &.righter {
+      top: 10px;
+      right: -15px;
+    }
+  }
+  p.help-text {
+    font-weight: bold;
+    color: #aaa;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    padding: 10px;
+  }
+}
+
+a .profile-avatar:hover {
+  border-color: $brand-success;
+}

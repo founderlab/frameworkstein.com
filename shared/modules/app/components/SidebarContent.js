@@ -24,9 +24,11 @@ export default class Sidebar extends Component {
     return (
       <div>
         <div className="profile">
-          <Link to="/">
-            <img src="/public/images/avatar.jpg" />
-          </Link>
+          <div className="profile-avatar">
+            <Link to="/">
+              <img src="/public/frankie-pixel-peep.svg" />
+            </Link>
+          </div>
           <p>
             <Link to="/" className="profile-name">
               Frameworkstein
