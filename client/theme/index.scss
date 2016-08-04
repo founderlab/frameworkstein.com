@@ -87,3 +87,25 @@ section {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+blockquote {
+  font-family: 'Merriweather, serif';
+  font-style: italic;
+  background: #fafafa;
+  border-radius: 3px;
+  padding: 20px;
+  quotes: "\201C""\201D""\2018""\2019";
+  color: #777;
+  padding-left: 50px;
+
+  p { font-size: 30px; }
+
+  &:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 60px;
+    position: absolute;
+    left: 25px;
+    top: 0;
+  }
+}
