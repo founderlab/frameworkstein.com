@@ -38,7 +38,7 @@ export default class Sidebar extends Component {
 
         <Nav bsStyle="pills" stacked>
           <LinkContainer to="/" onlyActiveOnIndex><NavItem>Home</NavItem></LinkContainer>
-          <LinkContainer to="/about"><NavItem>About</NavItem></LinkContainer>
+          {/*<LinkContainer to="/about"><NavItem>About</NavItem></LinkContainer>*/}
           <LinkContainer to="/packages"><NavItem>Included Packages</NavItem></LinkContainer>
           <LinkContainer to="/structure"><NavItem>App Structure</NavItem></LinkContainer>
 

@@ -1,8 +1,7 @@
 import React from 'react'
 import {Grid, Row, Col} from 'react-bootstrap'
 import Icon from '../../utils/components/Icon'
-
-const npmLink = (name, displayName) => (<a href={`https://www.npmjs.com/package/${name}`} target="_blank">{displayName || name}</a>)
+import npmLink from '../../../lib/npmLink'
 
 export default class Landing extends React.Component {
 
@@ -71,7 +70,7 @@ export default class Landing extends React.Component {
           </Row>
         </Grid>
 
-        <Grid fluid className="description">
+        <Grid fluid className="section">
           <Row>
             <Col xs={10} xsOffset={1}>
               <h2>

@@ -2,7 +2,7 @@
 @import './components/banner.scss';
 @import './components/footer.scss';
 @import './components/forms.scss';
-@import './components/landing.scss';
+@import './components/pages.scss';
 @import './components/loader.scss';
 @import './components/navbar.scss';
 @import './components/select.scss';
@@ -97,6 +97,7 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
   color: #777;
   padding-left: 50px;
+  margin-bottom: 60px;
 
   p { font-size: 30px; }
 
