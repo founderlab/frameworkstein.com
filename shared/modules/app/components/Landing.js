@@ -61,7 +61,7 @@ export default class Landing extends React.Component {
 
         <Grid fluid>
           <Row>
-            <Col xs={10} xsOffset={1}>
+            <Col xs={8} xsOffset={2}>
               <blockquote>
                 <div className="quote" />
                 <p>If I see but one smile on your lips when we meet, occasioned by this or any other exertion of mine, I shall need no other happiness.</p>
