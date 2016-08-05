@@ -1,8 +1,7 @@
 import React from 'react'
 import {Grid, Row, Col} from 'react-bootstrap'
 import Icon from '../../utils/components/Icon'
-
-const npmLink = (name, displayName) => (<a href={`https://www.npmjs.com/package/${name}`} target="_blank">{displayName || name}</a>)
+import npmLink from '../../../lib/npmLink'
 
 export default class Landing extends React.Component {
 
@@ -61,7 +60,7 @@ export default class Landing extends React.Component {
 
         <Grid fluid>
           <Row>
-            <Col xs={10} xsOffset={1}>
+            <Col xs={8} xsOffset={2}>
               <blockquote>
                 <div className="quote" />
                 <p>If I see but one smile on your lips when we meet, occasioned by this or any other exertion of mine, I shall need no other happiness.</p>
@@ -71,7 +70,7 @@ export default class Landing extends React.Component {
           </Row>
         </Grid>
 
-        <Grid fluid className="description">
+        <Grid fluid className="section">
           <Row>
             <Col xs={10} xsOffset={1}>
               <h2>
