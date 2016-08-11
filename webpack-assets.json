@@ -1,11 +1,14 @@
 {
   "shared": {
-    "js": "http://localhost:3101/public/shared.js"
+    "js": "/public/dist/shared-744151deb69a95bb39f5.js",
+    "css": "/public/dist/shared-744151deb69a95bb39f5.css"
   },
   "admin": {
-    "js": "http://localhost:3101/public/admin.js"
+    "js": "/public/dist/admin-da257416ec70f50632fc.js",
+    "css": "/public/dist/admin-da257416ec70f50632fc.css"
   },
   "app": {
-    "js": "http://localhost:3101/public/app.js"
+    "js": "/public/dist/app-cf231a3c34392b9fc907.js",
+    "css": "/public/dist/app-cf231a3c34392b9fc907.css"
   }
 }
