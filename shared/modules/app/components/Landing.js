@@ -58,17 +58,13 @@ export default class Landing extends React.Component {
           </Row>
         </Grid>
 
-        <Grid fluid>
-          <Row>
-            <Col xs={8} xsOffset={2}>
-              <blockquote>
-                <div className="quote" />
-                <p>If I see but one smile on your lips when we meet, occasioned by this or any other exertion of mine, I shall need no other happiness.</p>
-                <footer>Mary Shelly, <cite>Frankenstein</cite></footer>
-              </blockquote>
-            </Col>
-          </Row>
-        </Grid>
+        <div className="quote-container">
+          <blockquote>
+            <div className="quote" />
+            <p>If I see but one smile on your lips when we meet, occasioned by this or any other exertion of mine, I shall need no other happiness.</p>
+            <footer>Mary Shelly, <cite>Frankenstein</cite></footer>
+          </blockquote>
+        </div>
 
         <Grid fluid className="section">
           <Row>

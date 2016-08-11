@@ -88,6 +88,13 @@ section {
   padding-bottom: 15px;
 }
 
+.quote-container {
+  position: relative;
+  blockquote:before {
+    left: 15px;
+  }
+}
+
 blockquote {
   font-family: 'Merriweather, serif';
   font-style: italic;
