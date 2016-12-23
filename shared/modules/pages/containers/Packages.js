@@ -39,7 +39,6 @@ export default class Packages extends Component {
               </h4>
               <p>We've mostly picked the most popular ones. They work pretty well.</p>
 
-
               <h2 className="subhead">
                 Client
               </h2>

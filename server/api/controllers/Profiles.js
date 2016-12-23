@@ -1,5 +1,5 @@
 import _ from 'lodash' // eslint-disable-line
-import RestController from 'backbone-rest'
+import RestController from 'fl-backbone-rest'
 import {JSONUtils} from 'backbone-orm'
 import {createAuthMiddleware} from 'fl-auth-server'
 import Profile from '../../models/Profile'
@@ -7,7 +7,7 @@ import Profile from '../../models/Profile'
 export function canAccess(options, callback) {
   const {user, req} = options
   if (!user) return callback(null, false)
-  if (user.admin || user.get('admin')) return callback(null, true)
+  if (user.admin) return callback(null, true)
 
   const query = JSONUtils.parseQuery(req.query)
   if (query.$include) return callback(null, false, 'No $include')
