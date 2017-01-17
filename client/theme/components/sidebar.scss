@@ -14,7 +14,7 @@ $sidebar-highlight: #3B7090 !default;
 .sidebar {
   width: 170px;
   height: 100%;
-  font-size: 18px;
+  font-size: $font-size-large;
   background-color: $sidebar-bg;
 
   a:hover { text-decoration: none; }
@@ -74,12 +74,15 @@ $sidebar-highlight: #3B7090 !default;
         transition: all 0.2s;
         border-radius: 0;
       }
-      &:hover, &.active, &:focus {
-        a { background-color: $brand-primary; }
+      > a:hover, > a.active, > a:focus {
+        background-color: $brand-primary;
       }
-      a:focus { background-color: $brand-primary; }
-      &.disabled a {
+      &.disabled > a {
         color: #ddd;
+      }
+      > ul a {
+        padding-left: 30px;
+        font-size: $font-size-base;
       }
     }
   }

@@ -36,6 +36,9 @@ export default function getRoutes(store) {
       <Route path="packages" component={require('./modules/pages/containers/Packages')} />
       <Route path="structure" component={require('./modules/pages/containers/Structure')} />
 
+      <Route path="client/dir" component={require('./modules/pages/containers/client/Dir')} />
+      <Route path="shared/dir" component={require('./modules/pages/containers/shared/Dir')} />
+
       <Route path="docs/:slug/changelog" component={require('./modules/docs/containers/Changelog')} />
       <Route path="docs/:slug" component={require('./modules/docs/containers/Readme')} />
 
