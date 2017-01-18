@@ -32,9 +32,11 @@ export default function getRoutes(store) {
 
       <Route path="profile" onEnter={requireUser} component={require('./modules/users/containers/Profile')} />
 
-      <Route path="about" component={require('./modules/pages/containers/About')} />
-      <Route path="packages" component={require('./modules/pages/containers/Packages')} />
-      <Route path="structure" component={require('./modules/pages/containers/Structure')} />
+      <Route path="packages" component={require('./modules/pages/components/Packages')} />
+      <Route path="structure" component={require('./modules/pages/components/Structure')} />
+      <Route path="dirs/client" component={require('./modules/pages/components/structure/Client')} />
+      <Route path="dirs/shared" component={require('./modules/pages/components/structure/Shared')} />
+      <Route path="dirs/server" component={require('./modules/pages/components/structure/Server')} />
 
       <Route path="docs/:slug/changelog" component={require('./modules/docs/containers/Changelog')} />
       <Route path="docs/:slug" component={require('./modules/docs/containers/Readme')} />

@@ -1,83 +1,98 @@
 
-.profile-avatar {
+.avatar {
   transition: all 0.3s;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
-  border: 3px solid #fff;
   z-index: 1;
   position: relative;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  .avatar-bg {
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background: #dfdfdf;
-    position: relative;
+  > div {
+    flex: 1;
+  }
+
+  &.bordered {
+    border: solid 2px #fff;
   }
 
   img, .profile-icon-center {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   .profile-icon-center {
     color: #fff;
     background: #ccc;
     padding-top: 10px;
   }
-  .avatar-backup {
-    position: absolute;
-    top: -3px;
-    left: -1px;
-    width: 96px;
-    height: 100px;
-    text-align: center;
-  }
-}
-
-.profile-editor {
-  position: relative;
-
-  .pencil-holder {
+  .react-gravatar {
     position: relative;
-    width: 100px;
-    height: 100px;
-    margin: 20px auto 0;
+    z-index: 3;
+  }
+  .avatar-backup {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // width: 96px;
+    // height: 100px;
+    text-align: center;
   }
 
-  .profile-editor-edit {
+}
+
+.double-avatar {
+  position: relative;
+  .avatar:first-child {
     position: absolute;
-    right: -5px;
-    top: 5px;
-    background: #fff;
-    padding-top: 4px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border: solid 1px $brand-success;
-    z-index: 2;
-    &:hover {
-      color: #fff;
-      background: lighten($brand-success, 10%);
-    }
-    &.righter {
-      top: 10px;
-      right: -15px;
-    }
+    z-index: 1;
+    left: 0;
+    top: 0;
   }
-  p.help-text {
-    font-weight: bold;
-    color: #aaa;
+  .avatar:last-child {
     position: absolute;
-    text-align: center;
-    top: 40px;
-    padding: 10px;
+    z-index: 0;
+    left: 40%;
+    top: 40%;
   }
 }
 
-a .profile-avatar:hover {
-  border-color: $brand-success;
+.react-dropzone-s3-uploader {
+  display: inline-block;
+  transition: all 0.3s;
+  height: 88px;
+  width: 88px;
+  padding: 2px;
+  border: dashed 2px #999;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+
+  &:hover {
+    background: $brand-primary;
+    border-color: transparent !important;
+  }
+  .avatar {
+    border: 0;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.inline-avatar {
+  display: flex;
+  flex-direction: row;
+  .inline-avatar-avatar {
+
+  }
+  .inline-avatar-rest {
+
+  }
 }
