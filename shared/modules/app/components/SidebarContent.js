@@ -40,7 +40,8 @@ export default class Sidebar extends Component {
         <Nav bsStyle="pills" stacked>
           <LinkContainer to="/" onlyActiveOnIndex><NavItem>Home</NavItem></LinkContainer>
           {/*<LinkContainer to="/start"><NavItem>Getting Started</NavItem></LinkContainer>*/}
-          {/*<LinkContainer to="/run"><NavItem>Running the apps</NavItem></LinkContainer>*/}
+          {/*<LinkContainer to="/run"><NavItem>Running the app</NavItem></LinkContainer>*/}
+          {/*<LinkContainer to="/run"><NavItem>Building & deployment</NavItem></LinkContainer>*/}
 
           <li role="presentation">
             <a onClick={this.toggleSectionFn('dirs')}>App structure</a>
