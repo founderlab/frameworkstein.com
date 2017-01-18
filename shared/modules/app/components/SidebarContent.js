@@ -47,7 +47,7 @@ export default class Sidebar extends Component {
 
             {this.state.dirs && (
               <Nav bsStyle="pills" stacked>
-                <LinkContainer to="/dirs/overview"><NavItem>Overview</NavItem></LinkContainer>
+                {/*<LinkContainer to="/dirs/overview"><NavItem>Overview</NavItem></LinkContainer>*/}
                 <LinkContainer to="/dirs/client"><NavItem>Client</NavItem></LinkContainer>
                 <LinkContainer to="/dirs/shared"><NavItem>Shared</NavItem></LinkContainer>
                 <LinkContainer to="/dirs/server"><NavItem>Server</NavItem></LinkContainer>
