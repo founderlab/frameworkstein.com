@@ -2,7 +2,7 @@ import _ from 'lodash' // eslint-disable-line
 import React, {Component, PropTypes} from 'react'
 import {Link} from 'react-router'
 import {LinkContainer} from 'react-router-bootstrap'
-import {Nav, NavItem, Button} from 'react-bootstrap'
+import {Nav, NavItem} from 'react-bootstrap'
 
 export default class Sidebar extends Component {
 
@@ -38,20 +38,28 @@ export default class Sidebar extends Component {
         </div>
 
         <Nav bsStyle="pills" stacked>
-          <LinkContainer to="/" onlyActiveOnIndex><NavItem>About</NavItem></LinkContainer>
-          {/*<LinkContainer to="/about"><NavItem>About</NavItem></LinkContainer>*/}
-          <LinkContainer to="/packages"><NavItem>Included Packages</NavItem></LinkContainer>
-          <LinkContainer to="/structure"><NavItem>App Structure</NavItem></LinkContainer>
-          <LinkContainer to="/run"><NavItem>Running the apps</NavItem></LinkContainer>
+          <LinkContainer to="/" onlyActiveOnIndex><NavItem>Home</NavItem></LinkContainer>
+          {/*<LinkContainer to="/start"><NavItem>Getting Started</NavItem></LinkContainer>*/}
+          {/*<LinkContainer to="/run"><NavItem>Running the apps</NavItem></LinkContainer>*/}
 
           <li role="presentation">
-            <a onClick={this.toggleSectionFn('client')}>Docs - client</a>
+            <a onClick={this.toggleSectionFn('dirs')}>App structure</a>
+
+            {this.state.dirs && (
+              <Nav bsStyle="pills" stacked>
+                <LinkContainer to="/dirs/overview"><NavItem>Overview</NavItem></LinkContainer>
+                <LinkContainer to="/dirs/client"><NavItem>Client</NavItem></LinkContainer>
+                <LinkContainer to="/dirs/shared"><NavItem>Shared</NavItem></LinkContainer>
+                <LinkContainer to="/dirs/server"><NavItem>Server</NavItem></LinkContainer>
+              </Nav>
+            )}
+          </li>
+
+          <li role="presentation">
+            <a onClick={this.toggleSectionFn('client')}>Client</a>
 
             {this.state.client && (
               <Nav bsStyle="pills" stacked>
-                <LinkContainer to="/client/dir"><NavItem>The client directory</NavItem></LinkContainer>
-
-                <LinkContainer to="/shared/dir"><NavItem>The shared directory</NavItem></LinkContainer>
                 <LinkContainer to="/shared/universal"><NavItem>Universal js</NavItem></LinkContainer>
                 <LinkContainer to="/shared/modules"><NavItem>Modules</NavItem></LinkContainer>
                 <LinkContainer to="/shared/redux"><NavItem>Redux</NavItem></LinkContainer>
@@ -62,7 +70,7 @@ export default class Sidebar extends Component {
           </li>
 
           <li role="presentation">
-            <a onClick={this.toggleSectionFn('server')}>Docs - server</a>
+            <a onClick={this.toggleSectionFn('server')}>Server</a>
 
             {this.state.server && (
               <Nav bsStyle="pills" stacked>
@@ -73,7 +81,7 @@ export default class Sidebar extends Component {
           </li>
 
           <li role="presentation">
-            <a onClick={this.toggleSectionFn('mobile')}>Docs - mobile</a>
+            <a onClick={this.toggleSectionFn('mobile')}>Native</a>
 
             {this.state.mobile && (
               <Nav bsStyle="pills" stacked>
@@ -83,7 +91,7 @@ export default class Sidebar extends Component {
           </li>
 
           <li role="presentation">
-            <a onClick={this.toggleSectionFn('docs')}>Package docs</a>
+            <a onClick={this.toggleSectionFn('docs')}>Readmes</a>
 
             {this.state.docs && (
               <Nav bsStyle="pills" stacked>
@@ -99,6 +107,8 @@ export default class Sidebar extends Component {
               </Nav>
             )}
           </li>
+
+          <LinkContainer to="/packages"><NavItem>Included Packages</NavItem></LinkContainer>
 
         </Nav>
       </div>

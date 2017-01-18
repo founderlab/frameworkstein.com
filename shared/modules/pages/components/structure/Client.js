@@ -1,7 +1,6 @@
-import _ from 'lodash'
-import React, {Component, PropTypes} from 'react'
+import _ from 'lodash' // eslint-disable-line
+import React, {Component} from 'react'
 import {Link} from 'react-router'
-import {connect} from 'react-redux'
 import {Grid, Row, Col} from 'react-bootstrap'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import {kimbieLight as style} from 'react-syntax-highlighter/dist/styles'
@@ -32,12 +31,7 @@ export default (getRoutes) => {
 }
 `
 
-@connect(state => _.pick(state, 'config'), {})
-export default class Dir extends Component {
-
-  static propTypes = {
-    config: PropTypes.object.isRequired,
-  }
+export default class ClientDir extends Component {
 
   render() {
     return (
@@ -85,13 +79,13 @@ export default class Dir extends Component {
                 <a href="https://github.com/twbs/bootstrap-sass">bootstrap-sass</a> and {' '}
                 <a href="https://github.com/gowravshekar/font-awesome-webpack">font-awesome-webpack</a> are included by default.
               </p>
-              <p>
-                The <Link to="/webpack">webpack</Link> configuration references this config files (<code>*.config.js</code>). To disable one or the other do so there.
-              </p>
               <ul>
-                <li><a href="https://github.com/twbs/bootstrap-sass">bootstrap-sass</a> - check the docs (or the variables file) for available options.</li>
-                <li><a href="https://github.com/gowravshekar/font-awesome-webpack">font-awesome-webpack</a> - disable components that you don't want in your bundle here.</li>
+                <li><a href="https://github.com/twbs/bootstrap-sass">bootstrap-sass</a> - Bootstrap, with its variables in sass for easy editing.</li>
+                <li><a href="https://github.com/gowravshekar/font-awesome-webpack">font-awesome-webpack</a> - svg icons that you can use instead of Glyphicons.</li>
               </ul>
+              <p>
+                The config files (<code>*.config.js</code>) for each are used by <Link to="/webpack">webpack</Link> to determine which parts of each to include in the client bundle.
+              </p>
             </Col>
           </Row>
         </Grid>

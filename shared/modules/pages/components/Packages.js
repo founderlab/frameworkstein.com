@@ -1,15 +1,10 @@
-import _ from 'lodash'
-import React, {Component, PropTypes} from 'react'
-import {connect} from 'react-redux'
+import _ from 'lodash' // eslint-disable-line
+import React, {Component} from 'react'
+import {Link} from 'react-router'
 import {Grid, Row, Col} from 'react-bootstrap'
 import npmLink from '../../../lib/npmLink'
 
-@connect(state => _.pick(state, 'config'), {})
 export default class Packages extends Component {
-
-  static propTypes = {
-    config: PropTypes.object.isRequired,
-  }
 
   render() {
     return (
