@@ -39,7 +39,7 @@ export default class Packages extends Component {
               </h2>
               <p className="small">
                 Note that "client" here is a little misleading. All client code will also be run on your server when a page is requested.
-                Check out <a href="https://medium.com/@mjackson/universal-javascript-4761051b7ae9" target="_blank">this post on universal js</a> for some more info.
+                Check out <Link to="/client/universal">unversal js</Link> for some more info.
               </p>
               <h3>{npmLink('react', 'React')}</h3>
               <p>{npmLink('react', 'React')} is why you're here, right?</p>
@@ -68,7 +68,6 @@ export default class Packages extends Component {
               <h3>{npmLink('backbone-orm', 'BackboneORM')}</h3>
               <p>{npmLink('backbone-orm', 'BackboneORM')} is used to save your models.</p>
               <p>It has the same interface whether you're saving it over http (from the client) or to Mongo or Postgres (on the server)</p>
-
 
               <h2 className="subhead">Server</h2>
               <p className="small">

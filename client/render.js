@@ -12,8 +12,7 @@ Backbone.ajax = require('fl-backbone.nativeajax')
 import createStore from '../shared/createStore'
 import {patchRouteEntry} from 'fl-react-utils'
 
-export default (getRoutes) => {
-
+export default function(getRoutes) {
   const initialState = window.__INITIAL_STATE__
   const store = createStore(reduxReactRouter, patchRouteEntry(getRoutes), createHistory, initialState)
 
@@ -22,5 +21,4 @@ export default (getRoutes) => {
       <ReduxRouter routes={getRoutes(store)} />
     </Provider>
   ), document.getElementById('react-view'))
-
 }
