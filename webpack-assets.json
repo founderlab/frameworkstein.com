@@ -1,14 +1,14 @@
 {
   "shared": {
-    "js": "/public/dist/shared-a1524c9b460fa01eb37a.js",
-    "css": "/public/dist/shared-a1524c9b460fa01eb37a.css"
+    "js": "/public/dist/shared-0342387cb98430ac6920.js",
+    "css": "/public/dist/shared-0342387cb98430ac6920.css"
   },
   "admin": {
-    "js": "/public/dist/admin-abb90dd57a5e8158b3f6.js",
-    "css": "/public/dist/admin-abb90dd57a5e8158b3f6.css"
+    "js": "/public/dist/admin-a8063bde415c607fae1c.js",
+    "css": "/public/dist/admin-a8063bde415c607fae1c.css"
   },
   "app": {
-    "js": "/public/dist/app-6aaf02fdf4806aa9c338.js",
-    "css": "/public/dist/app-6aaf02fdf4806aa9c338.css"
+    "js": "/public/dist/app-a0a92060b57283f20a5a.js",
+    "css": "/public/dist/app-a0a92060b57283f20a5a.css"
   }
 }
