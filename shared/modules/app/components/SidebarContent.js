@@ -60,11 +60,11 @@ export default class Sidebar extends Component {
 
             {this.state.client && (
               <Nav bsStyle="pills" stacked>
-                <LinkContainer to="/shared/universal"><NavItem>Universal js</NavItem></LinkContainer>
-                <LinkContainer to="/shared/modules"><NavItem>Modules</NavItem></LinkContainer>
-                <LinkContainer to="/shared/redux"><NavItem>Redux</NavItem></LinkContainer>
-                <LinkContainer to="/shared/routes"><NavItem>Routes</NavItem></LinkContainer>
-                <LinkContainer to="/shared/request"><NavItem>Data Requests</NavItem></LinkContainer>
+                <LinkContainer to="/client/universal"><NavItem>Universal js</NavItem></LinkContainer>
+                <LinkContainer to="/client/modules"><NavItem>Modules</NavItem></LinkContainer>
+                <LinkContainer to="/client/redux"><NavItem>Redux</NavItem></LinkContainer>
+                <LinkContainer to="/client/routes"><NavItem>Routes</NavItem></LinkContainer>
+                <LinkContainer to="/client/request"><NavItem>Data Requests</NavItem></LinkContainer>
               </Nav>
             )}
           </li>

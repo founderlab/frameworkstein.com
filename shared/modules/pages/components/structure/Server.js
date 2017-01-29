@@ -74,7 +74,7 @@ export default class ServerDir extends Component {
             <Col xs={10} xsOffset={1}>
               <h2>Express routes for the client (React) apps</h2>
               <p>The clientApps directory contains a file per client React app. These will handle their routes by running their respective React app, rendering the html produced and sending that off.</p>
-              <p>See <Link to="universal">unversal js</Link> for more info.</p>
+              <p>See <Link to="/client/universal">unversal js</Link> for more info.</p>
             </Col>
           </Row>
         </Grid>

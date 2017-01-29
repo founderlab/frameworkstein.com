@@ -79,7 +79,7 @@ export default class Landing extends React.Component {
                 Frameworkstein helps you build React and React Native apps quickly using the best stuff from the ecosystem.
               </h2>
 
-              <p>Frameworkstein isn't a framework. It's a collection of modules that work well and the glue to make them work well together.</p>
+              <p>Frameworkstein isn't a framework. It's a collection of modules that work well and the glue to make them work well together. It covers:</p>
 
               <h3>Auth</h3>
               <p>The fl-auth-* collection of modules uses {npmLink('passport')} for user authentication.</p>
