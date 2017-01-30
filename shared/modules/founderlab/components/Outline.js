@@ -8,7 +8,7 @@ import npmLink from '../../../lib/npmLink'
 const md = `
 #### 1. Project Scope
   - We meet and scope out your project.
-  - You provide with FL some rough wireframes of the pages / screens of your app (pencil/paper is fine).
+  - You provide some rough wireframes of the pages / screens of your app (pencil/paper is fine).
   - You fill in the user stories MoSCoW spreadsheet.
   - We meet and discuss which user stories will be part of the project.
   - FL creates a Trello board, Bitbucket repository and invites you to the FL Slack channel.
