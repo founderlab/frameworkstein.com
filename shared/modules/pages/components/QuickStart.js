@@ -32,10 +32,13 @@ export default class Packages extends Component {
 
               <p>
                 <pre>
-                  $ brew install postgres{'\n'}
+                  $ brew install postgresql{'\n'}
                   $ brew install redis{'\n'}
                   $ brew install node{'\n'}
                 </pre>
+              </p>
+              <p>
+                Make sure that they're running before you proceed.
               </p>
 
               <h2 className="subhead">
