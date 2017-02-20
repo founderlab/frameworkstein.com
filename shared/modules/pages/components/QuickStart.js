@@ -55,7 +55,7 @@ export default class Packages extends Component {
               </h2>
               <p>
                 <pre>
-                  $ frameworkstein new myapp{'\n'}
+                  $ stein new myapp{'\n'}
                   $ cd myapp
                 </pre>
               </p>
@@ -86,6 +86,26 @@ export default class Packages extends Component {
                 If all went well your app is running and can be found at <a href="http://localhost:3000">http://localhost:3000</a>.
                 Frameworkstein will have created a database for you and populated it with some dummy data.
               </p>
+
+              <h2 className="subhead">
+                5. Add a model
+              </h2>
+              <p className="small">(extra credit)</p>
+              <p>
+                <pre>
+                  $ stein add-model Monster
+                </pre>
+              </p>
+              <p>You now have a Monster model with REST endpoints at <a href="http://localhost:3000/api/monsters">http://localhost:3000/api/monsters</a></p>
+
+              <h2 className="subhead">
+                6. Edit your models
+              </h2>
+              <p className="small">(and a gold star)</p>
+              <p>Visit the admin panel at <a href="http://localhost:3000/admin/monsters">http://localhost:3000/admin/monsters</a> to do CRUD things to your Monsters.</p>
+              <p>Login email: <code>admin@frameworkstein.com</code></p>
+              <p>Password: <code>frameworkstein</code></p>
+              <p className="small">You can modify these defaults in the <code>scaffold</code> directory.</p>
 
             </Col>
           </Row>
