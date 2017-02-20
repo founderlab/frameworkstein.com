@@ -39,12 +39,17 @@ export default class Sidebar extends Component {
 
         <Nav bsStyle="pills" stacked>
           <LinkContainer to="/" onlyActiveOnIndex><NavItem>Home</NavItem></LinkContainer>
-          {/*<LinkContainer to="/start"><NavItem>Getting Started</NavItem></LinkContainer>*/}
-          {/*<LinkContainer to="/run"><NavItem>Running the app</NavItem></LinkContainer>*/}
-          {/*<LinkContainer to="/run"><NavItem>Building & deployment</NavItem></LinkContainer>*/}
 
           <li role="presentation">
-            <a onClick={this.toggleSectionFn('dirs')}>App structure</a>
+            <Nav bsStyle="pills" stacked>
+              <LinkContainer to="/quickstart"><NavItem>Quick Start</NavItem></LinkContainer>
+              <LinkContainer to="/packages"><NavItem>Included Packages</NavItem></LinkContainer>
+              {/*<LinkContainer to="/run"><NavItem>Running the apps</NavItem></LinkContainer>*/}
+            </Nav>
+          </li>
+
+          <li role="presentation">
+            <a onClick={this.toggleSectionFn('dirs')}>App Structure</a>
 
             {this.state.dirs && (
               <Nav bsStyle="pills" stacked>
@@ -75,7 +80,7 @@ export default class Sidebar extends Component {
 
             {this.state.server && (
               <Nav bsStyle="pills" stacked>
-                <LinkContainer to="/server/data"><NavItem>Databases & models</NavItem></LinkContainer>
+                <LinkContainer to="/server/data"><NavItem>Databases & Models</NavItem></LinkContainer>
                 <LinkContainer to="/server/api"><NavItem>Rest api</NavItem></LinkContainer>
               </Nav>
             )}
@@ -108,8 +113,6 @@ export default class Sidebar extends Component {
               </Nav>
             )}
           </li>
-
-          <LinkContainer to="/packages"><NavItem>Included Packages</NavItem></LinkContainer>
 
         </Nav>
       </div>
