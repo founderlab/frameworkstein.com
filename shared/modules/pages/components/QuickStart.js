@@ -9,16 +9,17 @@ export default class Packages extends Component {
       <div>
 
         <header>
-          <h1>Quick Start (web app)</h1>
+          <h1>Quick Start</h1>
         </header>
 
         <Grid fluid className="section">
           <Row>
             <Col xs={10} xsOffset={1}>
               <h4>
-                Frameworkstein has a cli to give you a starting point for your app
+                Frameworkstein has a cli to give you a starting point for your presumably hideous creation.
               </h4>
-              <p>It has a few example models & components to give you an idea of how things work.</p>
+              <p>This doc goes through the steps to set up a new web app. </p>
+              <p>This app will start with a few example models & components to give you an idea of how things work.</p>
 
               <h2 className="subhead">
                 1. Install dependencies
@@ -45,10 +46,10 @@ export default class Packages extends Component {
               </pre>
 
               <h2 className="subhead">
-                2. Install the Frameworkstein cli and a few global dependencies
+                2. Install the Frameworkstein cli
               </h2>
               <p className="small">
-                <a href="https://babeljs.io">Babel</a> & <a href="https://webpack.github.io">webpack</a> are used to transpile JavaScript. <a href="https://nodemon.io">Nodemon</a> is used to auto restart the node server when files change.
+                Plus a few node dependencies. <a href="https://babeljs.io">Babel</a> & <a href="https://webpack.github.io">webpack</a> are used to transpile JavaScript. <a href="https://nodemon.io">Nodemon</a> is used to auto restart the node server when files change.
               </p>
               <pre>
                 $ npm install -g frameworkstein nodemon babel@5 webpack{'\n'}
@@ -57,6 +58,9 @@ export default class Packages extends Component {
               <h2 className="subhead">
                 3. Create a new app
               </h2>
+              <p className="small">
+                Make sure you're in whichever directory you like to put your projects first, of course.
+              </p>
               <pre>
                 $ stein new myapp{'\n'}
                 $ cd myapp{'\n'}
@@ -89,6 +93,9 @@ export default class Packages extends Component {
               </p>
               <p>
                 Frameworkstein will have created a database for you and populated it with some dummy data.
+              </p>
+              <p>
+                There's a bunch of example React components in the <code>shared/modules</code> directory that you can have a poke around with.
               </p>
 
               <h2 className="subhead">
