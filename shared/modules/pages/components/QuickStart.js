@@ -49,10 +49,10 @@ export default class Packages extends Component {
                 2. Install the Frameworkstein cli
               </h2>
               <p className="small">
-                Plus a few node dependencies. <a href="https://babeljs.io">Babel</a> & <a href="https://webpack.github.io">webpack</a> are used to transpile JavaScript. <a href="https://nodemon.io">Nodemon</a> is used to auto restart the node server when files change.
+                Plus a few node dependencies. <a href="https://babeljs.io">Babel</a> is used to transpile JavaScript. <a href="https://nodemon.io">Nodemon</a> is used to auto restart the node server when files change.
               </p>
               <pre>
-                $ npm install -g frameworkstein nodemon babel@5 webpack{'\n'}
+                $ npm install -g frameworkstein nodemon babel@5{'\n'}
               </pre>
 
               <h2 className="subhead">
