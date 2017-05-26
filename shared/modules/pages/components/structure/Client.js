@@ -37,7 +37,7 @@ export default class ClientDir extends Component {
     return (
       <div>
         <header>
-          <h1>The client directory</h1>
+          <h1>The <i>client</i> directory</h1>
         </header>
 
         <Grid fluid className="section">

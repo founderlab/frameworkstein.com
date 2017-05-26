@@ -62,7 +62,7 @@ export default class Sidebar extends Component {
           </li>
 
           <li role="presentation">
-            <a onClick={this.toggleSectionFn('client')}>Client</a>
+            <a onClick={this.toggleSectionFn('client')}>Client / shared</a>
 
             {this.state.client && (
               <Nav bsStyle="pills" stacked>
@@ -70,7 +70,7 @@ export default class Sidebar extends Component {
                 <LinkContainer to="/client/modules"><NavItem>Modules</NavItem></LinkContainer>
                 <LinkContainer to="/client/redux"><NavItem>Redux</NavItem></LinkContainer>
                 <LinkContainer to="/client/routes"><NavItem>Routes</NavItem></LinkContainer>
-                <LinkContainer to="/client/request"><NavItem>Data Requests</NavItem></LinkContainer>
+                <LinkContainer to="/client/requests"><NavItem>Requests</NavItem></LinkContainer>
               </Nav>
             )}
           </li>

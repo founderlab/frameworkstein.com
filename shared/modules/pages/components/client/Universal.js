@@ -58,15 +58,15 @@ export default class Packages extends Component {
         <Grid fluid className="section">
           <Row>
             <Col xs={10} xsOffset={1}>
-              <h3>
+              <h2>
                 Universal JavaScript apps
-              </h3>
+              </h2>
               <p className="small">
-                Otherwise known as <i>Isomorphic JavaScript</i>
+                Otherwise known as <i>Isomorphic JavaScript</i>, both of which are just fancy names for rendering client JS on the server
               </p>
               <p>A Universal JavaScript app is able to be run on the server (Node) as well as the client (Browser).</p>
               <p>This means that the server will, when receiving a request for a page, run the client app and render out the pages complete html to ship to the client.</p>
-              <p>The client will then run the same JavScript. React will see that there's already a rendered dom tree and happily continue to use it.</p>
+              <p>The client will then run the same JavScript. React will see that there's already a rendered DOM tree and happily continue to use it.</p>
               <p>See <a href="https://strongloop.com/strongblog/node-js-react-isomorphic-javascript-why-it-matters" target="_blank">this strongloop post</a> for more information.</p>
               <p>See <a href="https://medium.com/@mjackson/universal-javascript-4761051b7ae9" target="_blank">this post on the term "universal"</a> for why we're using two different words for it.</p>
             </Col>
@@ -76,10 +76,9 @@ export default class Packages extends Component {
         <Grid fluid className="section">
           <Row>
             <Col xs={10} xsOffset={1}>
-              <h3>
+              <h2>
                 How Fameworkstein renders React on the server
-              </h3>
-              <p></p>
+              </h2>
 
               <p>A server renderer - an express route handler that can render a React app - is created by <code>createServerRenderer</code> from {npmLink('fl-react-server')}.</p>
               <SyntaxHighlighter language="javascript" style={style}>{rendererSrc}</SyntaxHighlighter>
