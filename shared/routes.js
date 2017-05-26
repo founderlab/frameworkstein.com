@@ -38,6 +38,10 @@ export default function getRoutes(store) {
       <Route path="dirs/shared" component={require('./modules/pages/components/structure/Shared')} />
       <Route path="dirs/server" component={require('./modules/pages/components/structure/Server')} />
       <Route path="client/universal" component={require('./modules/pages/components/client/Universal')} />
+      <Route path="client/modules" component={require('./modules/pages/components/client/Modules')} />
+      <Route path="client/redux" component={require('./modules/pages/components/client/Redux')} />
+      <Route path="client/routes" component={require('./modules/pages/components/client/Routes')} />
+      <Route path="client/requests" component={require('./modules/pages/components/client/Requests')} />
 
       <Route path="docs/:slug/changelog" component={require('./modules/docs/containers/Changelog')} />
       <Route path="docs/:slug" component={require('./modules/docs/containers/Readme')} />

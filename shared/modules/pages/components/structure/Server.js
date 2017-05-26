@@ -9,7 +9,7 @@ export default class ServerDir extends Component {
     return (
       <div>
         <header>
-          <h1>The server directory</h1>
+          <h1>The <i>server</i> directory</h1>
         </header>
 
         <Grid fluid className="section">
