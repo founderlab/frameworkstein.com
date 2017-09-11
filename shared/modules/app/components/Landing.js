@@ -20,7 +20,7 @@ export default class Landing extends React.Component {
 
           <div className="install">
             <pre>
-              $ npm install frameworkstein
+              $ npm install -g frameworkstein
             </pre>
 
             <pre>
