@@ -57,23 +57,24 @@ app.use('/public', express.static(path.join(__dirname, '../public')))
 app.use(favicon(path.join(__dirname, '../public/favicons/favicon.ico')))
 
 // Auth after other middleware and before api/client
-configureAuth({
-  app,
-  User,
-  sendConfirmationEmail,
-  sendResetEmail,
-  facebook: false,
-  linkedin: false,
-  login: {
-    extraRegisterParams: ['type', 'organisation_id', 'mentor'],
-  },
-  serializing: {
-    deserializeUser: User.deserializeUser,
-  },
-})
+// configureAuth({
+//   app,
+//   User,
+//   sendConfirmationEmail,
+//   sendResetEmail,
+//   facebook: false,
+//   linkedin: false,
+//   login: {
+//     extraRegisterParams: ['type', 'organisation_id', 'mentor'],
+//   },
+//   serializing: {
+//     deserializeUser: User.deserializeUser,
+//   },
+// })
 
 initDB(() => {
-  initApi(bindOptions)
+  // initApi(bindOptions)
+
   // React app last; handles all other routes
   initClientApps(bindOptions)
 

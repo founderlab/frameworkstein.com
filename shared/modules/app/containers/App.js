@@ -35,20 +35,6 @@ export default class App extends Component {
     if (!this.state.s3Url) this.setState({publicPath: this.props.config.get('publicPath'), s3Url: this.props.config.get('s3Url')})
   }
 
-  static fetchData({store, action}, callback) {
-    const {app, auth, profiles} = store.getState()
-    const queue = new Queue()
-
-    if (!app.get('loaded')) queue.defer(callback => store.dispatch(loadAppSettings(callback)))
-
-    if (auth.get('user') && !profiles.get('loading') && !profiles.get('active')) {
-      const user_id = auth.get('user').get('id')
-      queue.defer(callback => store.dispatch(loadActiveProfile({user_id}, callback)))
-    }
-
-    queue.await(callback)
-  }
-
   render() {
     const name = this.props.config.get('name')
     return (
