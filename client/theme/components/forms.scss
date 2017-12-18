@@ -138,30 +138,3 @@ legend {
   padding: 8px;
   min-height: 38px;
 }
-
-.form-quill {
-  background-color : #ffffff;
-  height: 300px;
-
-  .quill {
-    height: 100%;
-
-    .quill-toolbar {
-      background-color: #fafafa;
-    }
-
-    .quill-contents {
-      padding: 0;
-      height: 260px;
-    }
-
-    .ql-editor {
-      padding: 5px;
-      border: 3px solid #e7e7e7;
-      &:focus {
-        border: 3px solid $brand-info;
-      }
-    }
-  }
-
-}
