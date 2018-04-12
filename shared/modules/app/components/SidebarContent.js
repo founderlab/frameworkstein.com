@@ -71,6 +71,7 @@ export default class Sidebar extends Component {
                 <LinkContainer to="/client/redux"><NavItem>Redux</NavItem></LinkContainer>
                 <LinkContainer to="/client/routes"><NavItem>Routes</NavItem></LinkContainer>
                 <LinkContainer to="/client/requests"><NavItem>Requests</NavItem></LinkContainer>
+                <LinkContainer to="/client/fetch-data"><NavItem>Fetching data</NavItem></LinkContainer>
               </Nav>
             )}
           </li>

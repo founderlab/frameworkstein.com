@@ -1,11 +1,11 @@
 {
-  "shared": {
-    "js": "http://localhost:3101/public/shared.js"
-  },
   "admin": {
     "js": "http://localhost:3101/public/admin.js"
   },
   "app": {
     "js": "http://localhost:3101/public/app.js"
+  },
+  "shared": {
+    "js": "http://localhost:3101/public/shared.js"
   }
 }
