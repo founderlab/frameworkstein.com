@@ -4,10 +4,9 @@
     "css": "/public/dist/admin-ac5fbfa2bc996c4bdf86.css"
   },
   "app": {
-    "js": "/public/dist/app-d332f5793498b9e55535.js",
-    "css": "/public/dist/app-d332f5793498b9e55535.css"
+    "js": "http://localhost:3101/public/app.js"
   },
   "shared": {
-    "js": "/public/dist/shared-67932bdf420078d9b940.js"
+    "js": "http://localhost:3101/public/shared.js"
   }
 }

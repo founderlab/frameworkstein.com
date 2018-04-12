@@ -42,6 +42,7 @@ export default function getRoutes(store) {
       <Route path="client/redux" component={require('./modules/pages/components/client/Redux')} />
       <Route path="client/routes" component={require('./modules/pages/components/client/Routes')} />
       <Route path="client/requests" component={require('./modules/pages/components/client/Requests')} />
+      <Route path="client/fetch-data" component={require('./modules/pages/components/client/FetchData')} />
 
       <Route path="docs/:slug/changelog" component={require('./modules/docs/containers/Changelog')} />
       <Route path="docs/:slug" component={require('./modules/docs/containers/Readme')} />
